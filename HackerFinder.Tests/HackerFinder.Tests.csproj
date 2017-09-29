@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{E7425E18-B223-4D90-93C2-CE3236B29D91}</ProjectGuid>
+    <ProjectGuid>{C00391E8-C478-449F-B6A8-10EC41DA9791}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>HackerFinder</RootNamespace>
-    <AssemblyName>HackerFinder</AssemblyName>
+    <RootNamespace>HackerFinder.Tests</RootNamespace>
+    <AssemblyName>HackerFinder.Tests</AssemblyName>
     <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -45,6 +45,12 @@
   <ItemGroup>
     <Compile Include="Class1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\HackerFinder\HackerFinder.csproj">
+      <Project>{e7425e18-b223-4d90-93c2-ce3236b29d91}</Project>
+      <Name>HackerFinder</Name>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
